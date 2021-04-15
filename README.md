@@ -4,7 +4,7 @@ Une extension Google Chrome pour changer les Santédollars en Ninja Coins dans l
 ## Procédure d'installation
 * Téléchargez ce dépôt sur votre poste en local
 
-* Dans Google Chrome, naviguez sur [chrome://extensions/](chrome://extensions/)
+* Dans Google Chrome, naviguez sur `chrome://extensions/`
 
 * En haut à droite, assurez-vous que le Mode développeur est activé
 ![Image](assets/readme/developermode.png)
