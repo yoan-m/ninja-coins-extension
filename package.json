@@ -1,0 +1,24 @@
+{
+  "name": "ninja-coins-extension",
+  "version": "1.0.0",
+  "description": "Une extension Google Chrome pour changer les Santédollars en Ninja Coins dans l'application Être en Santé.",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/common.js src/heading.js src/bilan.js src/historique.js src/activites.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoouellet/ninja-coins-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoouellet/ninja-coins-extension/issues"
+  },
+  "homepage": "https://github.com/brunoouellet/ninja-coins-extension#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

@@ -1,11 +1,29 @@
 {
     "manifest_version": 2,
     "name": "Ninja Coins",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Change the Santédollars icon to Ninja Coins",
-    "content_scripts": [{
-        "js": ["index.js"],
-        "matches": ["https://www.etreensante.ca/*"]
-    }],
-    "web_accessible_resources": ["assets/ninjacoin.svg"]
+    "content_scripts": [
+        {
+            "js": ["dist/common.js"],
+            "matches": ["*://www.etreensante.ca/*"]
+        },
+        {
+            "js": ["dist/heading.js"],
+            "matches": ["*://www.etreensante.ca/*/remboursement/demande", "*://www.etreensante.ca/*/bilan/novodollars"]
+        },
+        {
+            "js": ["dist/bilan.js"],
+            "matches": ["*://www.etreensante.ca/*/bilan/novodollars"]
+        },
+        {
+            "js": ["dist/historique.js"],
+            "matches": ["*://www.etreensante.ca/*/bilan/historique"]
+        },
+        {
+            "js": ["dist/activites.js"],
+            "matches": ["*://www.etreensante.ca/*/bilan/activites"]
+        }
+    ],
+    "web_accessible_resources": ["assets/ninjacoin.svg", "assets/tlmlogo.svg"]
 }
