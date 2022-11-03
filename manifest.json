@@ -1,7 +1,7 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Ninja Coins",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Change the Santédollars icon to Ninja Coins",
     "content_scripts": [
         {
@@ -25,5 +25,10 @@
             "matches": ["*://www.etreensante.ca/*/bilan/activites"]
         }
     ],
-    "web_accessible_resources": ["assets/ninjacoin.svg", "assets/tlmlogo.svg"]
+    "web_accessible_resources": [
+    	{
+			"resources": ["assets/ninjacoin.svg", "assets/tlmlogo.svg"],
+			"matches": [ "*://www.etreensante.ca/*" ]
+		}
+	]
 }
